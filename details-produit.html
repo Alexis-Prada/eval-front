@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+        <title>Découvrez notre toute nouvelle gamme de baskets M'S déclinée en 4 coloris ! Conçue pour la course à pied sur bitume comme sur les chemins légèrement escarpés</title>
+        <meta name="description" content="Chassures de sport : randonnée, running, fitness, et tout autre sport. Cette nouvelle gamme M'S vous surprendra pendant vos scéance de sport mais aussi dans la vie de tous les jours ! Disponible dans beaucoup de tailles différentes.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="flex align-center space-between responsive">
+            <div class="header-img">
+                <a href="./index.html" title="lien vers page home"><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></a>
+            </div>
+            <nav class="nav width50">
+                <ul class="flex align-center space-between responsive">
+                    <li><a href="./index.html" title="lien vers page home">Accueil</a></li>
+                    <li><a href="./categorie-basket.html" title="lien vers page chaussures">Chaussures</a></li>
+                    <li><a href="#" title="lien vers page vetements">Vêtements</a></li>
+                    <li><a href="#" title="lien vers page accessoires">Accessoires</a></li>
+                    <li><a href="#" title="lien vers gamme @utdoor" class="button-empty">@utdoor</a></li>
+                </ul>
+            </nav>
+            <nav class="flex align-center space-between">
+                <a href="#" title="lien vers le panier"><img src="./assets/imagesSIte/header-pannier.png" alt="logo du panier" class="responsive"></a>
+                <a href="#" title="lien vers le compte"><img src="./assets/imagesSIte/header-account.png" alt="logo de profil" class="responsive"></a>
+            </nav>
+            <div class="icon-burger d-none"></div>
+        </header>
+        <!-- Main -->
+        <main class="details-produit container-1200 container-750 container-360">
+            <div class="flex top-categorie">
+                <span><a href="#" title="lien page chaussures">Chaussures ></a></span>
+                <span><a href="./categorie-basket.html" title="lien categorie baskets">Baskets ></a></span>
+                <span><a href="./details-produit.html" title="lien details produit">Libelle du produit</a></span>
+            </div>
+            <article class="flex space-between align-center">
+                <!-- Swipper -->
+                <div class="swiper responsive-tel">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="./assets/details-produit/basket2-bleu.png" alt="" class="responsive">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="./assets/details-produit/basket2-violet.png" alt="" class="responsive">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="./assets/details-produit/basket2-rouge.png" alt="" class="responsive">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="./assets/details-produit/basket2-vert.png" alt="" class="responsive">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button"></div>
+                    <div class="swiper-button-next swiper-button"></div>
+                </div>
+                <!-- Article produit -->
+                <div class="libelle-produit flex space-between align-center responsive-tel">
+                    <div class="flex space-between align-center responsive">
+                        <h2>Libellé du produit</h2>
+                        <p>159€</p>
+                    </div>
+                    <p>Dernière née de la gamme, cette basket est conçue pour la course à pied sur bitume comme sur les chemins légèrement escarpés.</p>
+                    <ul>
+                        <li>semelle : caoutchouc naturel anti dérapant</li>
+                        <li>bon maintien tu pied</li>
+                        <li>Aération optimale grâce a la structure micro alvéolée de sa coque</li>
+                    </ul>
+                    <div class="flex space-between align-center responsive">
+                        <strong>Couleurs disponibles</strong>
+                        <div class="flex box-cercle">
+                            <div class="cercle bleu"></div>
+                            <div class="cercle violet"></div>
+                            <div class="cercle rouge"></div>
+                            <div class="cercle vert"></div>
+                        </div>
+                    </div>
+                    <div class="flex space-between align-center responsive">
+                        <strong>Tailles disponibles</strong>
+                        <select name="tailles" id="tailles">
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                        </select>
+                    </div>
+                    <div class="flex space-between align-center responsive">
+                        <strong>Nombre d'articles en stock</strong>
+                        <p>67</p>
+                    </div>
+                    <a href="#" title="btn ajouter au panier" class="button-full">Ajouter au panier</a>
+                </div>
+            </article>
+            <!-- Section commentaires -->
+            <section>
+                <h2>Avis des consommateurs</h2>
+                <div class="avis-conso flex align-center">
+                    <div class="avis-img">
+                        <img src="./assets/imagesSIte/header-account.png" alt="image de profil des consommateurs" class="width50">
+                    </div>
+                    <div class="avis-text">
+                        <div class="flex align-center">
+                            <strong>Nicolas</strong>
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>Ces baskets sont super, je les prends pour courrir ou même en ville pour sortir car elles sont sympa en plus et faciles a porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+                <div class="avis-conso flex align-center">
+                    <div class="avis-img">
+                        <img src="./assets/imagesSIte/header-account.png" alt="image de profil des consommateurs" class="width50">
+                    </div>
+                    <div class="avis-text">
+                        <div class="flex align-center">
+                            <strong>Nicolas</strong>
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>Ces baskets sont super, je les prends pour courrir ou même en ville pour sortir car elles sont sympa en plus et faciles a porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+                <div class="avis-conso flex align-center">
+                    <div class="avis-img">
+                        <img src="./assets/imagesSIte/header-account.png" alt="image de profil des consommateurs" class="width50">
+                    </div>
+                    <div class="avis-text">
+                        <div class="flex align-center">
+                            <strong>Nicolas</strong>
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>Ces baskets sont super, je les prends pour courrir ou même en ville pour sortir car elles sont sympa en plus et faciles a porter, je recommande grandement ce produit</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top flex align-center">
+                <div><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></div>
+                <h4>Retrouvez nos boutiques près de chez vous</h4>
+                <div id="map"></div>
+            </div>
+            <div class="flex container-1200 container-750 container-360">
+                <div>
+                    <h4>Plan du site</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="lien vers page homa">Accueil</a></li>
+                            <li><a href="#" title="lien vers page vêtements">Vêtements</a></li>
+                            <li><a href="#" title="lien vers page chaussure">Chaussures</a></li>
+                            <li><a href="#" title="lien vers page @utdoor">@utdoor</a></li>
+                            <li><a href="#" title="lien vers page contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-middle">
+                    <h4>Horaires d'ouverture de nos boutiques</h4>
+                    <p>Du lundi au vendredi de 10h à 12h30 puis de 13h30 à 19h <br>Le samedi de 9h à 18h30 non stop</p>
+                </div>
+                <div class="footer-right">
+                    <h4>Retrouvez nous sur les réseaux sociaux</h4>
+                    <nav>
+                        <ul class="flex space-between align-center">
+                            <li><a href="#" title="lien vers X"><img src="./assets/imagesSIte/TwitterX.png" alt="logo X" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers facebook"><img src="./assets/imagesSIte/Facebook.png" alt="logo facebook" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers tik-tok"><img src="./assets/imagesSIte/TikTok.png" alt="logo tik-tok" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers instagram"><img src="./assets/imagesSIte/Instagram.png" alt="logo instagram" class="responsive"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="./js/swiper.js" defer></script>
+        <script src="./js/app.js" defer></script>
+    </body>
+</html>

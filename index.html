@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+        <title>Vêtements et chaussures de sport pour hommes. Venez découvrir notre toute nouvelle boutique M'S dédier au confort du sport ! Validé par les plus grandes marques comme Nike, Adidas, Puma, New balanc, etc ! </title>
+        <meta name="description" content="Découvrez nos pantalons, hauts, chaussures et vêtements de sport pour homme. Disponiblendans toutes les tailles et colories, pour n'importe quelles séances de sport ! Livraison gratuite et rapide sous 24h">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="flex align-center space-between responsive">
+            <div class="header-img">
+                <a href="./index.html" title="lien vers page home"><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></a>
+            </div>
+            <nav class="nav width50">
+                <ul class="flex align-center space-between responsive">
+                    <li><a href="./index.html" title="lien vers page home">Accueil</a></li>
+                    <li><a href="./categorie-basket.html" title="lien vers page chaussures">Chaussures</a></li>
+                    <li><a href="#" title="lien vers page vetements">Vêtements</a></li>
+                    <li><a href="#" title="lien vers page accessoires">Accessoires</a></li>
+                    <li><a href="#" title="lien vers gamme @utdoor" class="button-empty">@utdoor</a></li>
+                </ul>
+            </nav>
+            <nav class="flex align-center space-between">
+                <a href="#" title="lien vers le panier"><img src="./assets/imagesSIte/header-pannier.png" alt="logo du panier" class="responsive"></a>
+                <a href="#" title="lien vers le compte"><img src="./assets/imagesSIte/header-account.png" alt="logo de profil" class="responsive"></a>
+            </nav>
+            <div class="icon-burger d-none"></div>
+        </header>
+        <!-- Hero -->
+        <div class="hero">
+            <img src="./assets/imagesSIte/banniere-running.jpg" alt="imagede d'un jogger" class="responsive">
+            <div class="flex">
+                <h2>Ne chercher plus chaussure à votre pied</h2>
+                <em>Découvrez notre toute nouvelle gamme de baskets M'S déclinée en 4 coloris</em>
+                <a href="./details-produit.html" title="lien vers page details produit" class="button-full">Découvrir la gamme</a>
+            </div>
+        </div>
+        <!-- Main -->
+        <main class="container-1200 container-750 container-360 flex">
+            <!-- Section catégories -->
+            <section class="categories flex space-between align-center">
+                <h1>VÊTEMENTS ET CHAUSSURES DE SPORT POUR HOMME</h1>
+                <h2 class="responsive">Nos produits par catégories</h2>
+                <!-- chaussures -->
+                <article>
+                    <h5>CHAUSSURES</h5>
+                    <div>
+                        <img src="./assets/imagesSIte/categorie-chaussures.jpg" alt="image d'un jogger" class="responsive">
+                    </div>
+                    <p>Baskets, Chaussures de montagnes, Chaussures hautes, Chaussures basses, ...partez bien équipés</p>
+                    <a href="./categorie-basket.html" title="lien page chaussures" class="button-empty responsive">Voir les modèles de chaussures</a>
+                </article>
+                <!-- accessoires -->
+                <article>
+                    <h5>ACCESSOIRES</h5>
+                    <div>
+                        <img src="./assets/imagesSIte/categorie-accessoires.jpg" alt="image d'une personne avec un sac à dos et un appareil photo" class="responsive">
+                    </div>
+                    <p>Sac à dos de randonnées, toiles de tente, réchauds, matériel de sport intérieur et exterieur</p>
+                    <a href="#" title="lien page accessoires" class="button-empty responsive">Voir les accessoires</a>
+                </article>
+                <!-- vêtements -->
+                <article>
+                    <h5>VÊTEMENTS</h5>
+                    <div>
+                        <img src="./assets/imagesSIte/categorie-vetements.jpg" alt="image d'un jogger" class="responsive">
+                    </div>
+                    <p>Vêtements tous sports, jogging, shorts, tee-shirts, hoodies, vestes, chaussettes et débardeurs</p>
+                    <a href="#" title="lien page vêtements" class="button-empty responsive">Voir les modèles de vêtements</a>
+                </article>
+            </section>
+            <!-- Section @utdoor -->
+            <section class="outdoor">
+                <img src="./assets/imagesSIte/accueil-bg-outdoor.jpg" alt="image d'un jogger sur une falaise" class="responsive">
+                <div class="flex width50 responsive-tel">
+                    <h2>Découvrez notre gamme @utdoor</h2>
+                    <p>Une sélection parmis les vêtements techniques de notre fabrication ainsi que des meilleurs marques sur le marché</p>
+                    <a href="#" title="lien gamme @utdoor" class="button-empty">Voir les articles de la gamme @utdoor</a>
+                </div>
+                <!-- nouveauté -->
+                <article class="flex">
+                    <div class="responsive-tel">
+                        <img src="./assets/imagesSIte/outdoor6.jpg" alt="image d'un t-shirt" class="responsive">
+                    </div>
+                    <div class="nouveaute-text responsive-tel">
+                        <div class="flex space-between align-center">
+                            <h3>NOUVEAUTÉ</h3>
+                            <p>40€</p>
+                        </div>
+                        <p>Tee shirt techniques rando+ , résistant , confortable, tissus déperlant</p>
+                        <ul>
+                            <li>Respirabilité</li>
+                            <li>Imperméabilité</li>
+                            <li>Anti odeurs</li>
+                        </ul>
+                        <a href="#" title="lien détail produit nouveauté">Voir le détail du produit</a>
+                    </div>
+                </article>
+            </section>
+            <!-- Section offre -->
+            <section class="offre flex space-between align-center">
+                <article class="flex responsive-tel">
+                    <h2>Profitez de l'offre</h2>
+                    <strong>L'ensemble jogging M'S noir <br>disponible en plusieurs tailles</strong>
+                    <p>Ce jogging alie confort légèreté et douceur, pour du sport à l'exterieur comme pour les moments de détente à la maison</p>
+                    <a href="#" title="lien produit offre" class="button-empty">Voir les détail du produit</a>
+                </article>
+                <div class="width50 responsive-tel"><img src="./assets/imagesSIte/Joogin-promo.jpg" alt="image du jogging en promotion" class="responsive"></div>
+            </section>
+            <!-- Section marques -->
+            <section class="marques responsive">
+                <div class="bg-marques"></div>
+                <h2>Ces marques nous font confiance</h2>
+                <div class="flex space-between align-center">
+                    <div><img src="./assets/imagesSIte/the-north-face.png" alt="logo the north face" class="responsive"></div>
+                    <div><img src="./assets/imagesSIte/puma.png" alt="logo puma" class="responsive"></div>
+                    <div><img src="./assets/imagesSIte/adidas.png" alt="logo adidas" class="responsive"></div>
+                    <div><img src="./assets/imagesSIte/nike.png" alt="logo nike" class="responsive"></div>
+                </div>
+            </section>
+            <!-- Section contact -->
+            <section class="contact flex space-between align-center">
+                <div class="responsive-tel"><img src="./assets/imagesSIte/illustration-boxe.jpg" alt="image de boxe" class="responsive"></div>
+                <div class="flex responsive-tel">
+                    <h2>Contactez - nous</h2>
+                    <p>Pour des informations sur nos produits, pour toutes demande de renseignement ou pour nous faire remonter un problème technique sur le site, merci de remplir le formulaie suivant</p>
+                    <form action="" method="GET" id="formContact">
+                        <div class="flex space-between align-center">
+                            <div>
+                                <label for="nom">Votre nom</label>
+                                <input type="text" id="nom" name="nom" class="responsive">
+                                <p class="p-error d-none" id="error-nom">Vous avez fait une erreur</p>
+                            </div>
+                            <div>
+                                <label for="prenom">Votre prénom</label>
+                                <input type="text" id="prenom" name="prenom" class="responsive">
+                                <p class="p-error d-none" id="error-prenom">Vous avez fait une erreur</p>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="mail">Votre adresse de messagerie</label>
+                            <input type="email" id="mail" name="mail" class="responsive">
+                            <p class="p-error d-none" id="error-mail">Vous avez fait une erreur</p>
+                        </div>
+                        <div>
+                            <label for="objet">Objet</label>
+                            <select name="objet" id="objet" class="responsive">
+                                <option value=""></option>
+                                <option value="info generales">Demande d’informations générales</option>
+                                <option value="probleme site">Signaler un problème sur le site</option>
+                                <option value="info produit">Demande d’information sur un produit</option>
+                                <option value="probleme produit">signaler un problème sur un produit</option>
+                            </select>
+                            <p class="p-error d-none" id="error-objet">Vous avez fait une erreur</p>
+                        </div>
+                        <div class="d-none" id="ifProduit">
+                            <label for="reference">Référence du produit</label>
+                            <input type="text" id="reference" name="reference" class="responsive">
+                            <p class="p-error d-none" id="error-reference">Vous avez fait une erreur</p>
+                        </div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" class="responsive"></textarea>
+                            <p class="p-error d-none" id="error-message">Vous avez fait une erreur</p>
+                        </div>
+                        <input type="submit" value="Envoyer votre message">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top flex align-center">
+                <div><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></div>
+                <h4>Retrouvez nos boutiques près de chez vous</h4>
+                <div id="map"></div>
+            </div>
+            <div class="flex container-1200 container-750 container-360">
+                <div class="responsive-tel">
+                    <h4>Plan du site</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="lien vers page homa">Accueil</a></li>
+                            <li><a href="#" title="lien vers page vêtements">Vêtements</a></li>
+                            <li><a href="#" title="lien vers page chaussure">Chaussures</a></li>
+                            <li><a href="#" title="lien vers page @utdoor">@utdoor</a></li>
+                            <li><a href="#" title="lien vers page contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-middle responsive-tel">
+                    <h4>Horaires d'ouverture de nos boutiques</h4>
+                    <p>Du lundi au vendredi de 10h à 12h30 puis de 13h30 à 19h <br>Le samedi de 9h à 18h30 non stop</p>
+                </div>
+                <div class="footer-right responsive-tel">
+                    <h4>Retrouvez nous sur les réseaux sociaux</h4>
+                    <nav>
+                        <ul class="flex space-between align-center">
+                            <li><a href="#" title="lien vers X"><img src="./assets/imagesSIte/TwitterX.png" alt="logo X" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers facebook"><img src="./assets/imagesSIte/Facebook.png" alt="logo facebook" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers tik-tok"><img src="./assets/imagesSIte/TikTok.png" alt="logo tik-tok" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers instagram"><img src="./assets/imagesSIte/Instagram.png" alt="logo instagram" class="responsive"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="./js/formulaire.js" defer></script>
+        <script src="./js/app.js" defer></script>
+    </body>
+</html>

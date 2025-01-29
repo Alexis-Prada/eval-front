@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+        <title>Venez découvrir notre nombres collection de chaussures pour homme. Dédier au sport intérieur comme extérieur. Toutes nos sneakers de marques ici !</title>
+        <meta name="description" content="Explorez notre gamme de chaussures de sport pour homme, provenant des marques les plus reconnues comme Nike, Adidas, Asics, Puma, New balance, The North Face, etc. À des prix imbattables. Profitez d'une livraison rapide sous 24 heures.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="flex align-center space-between responsive">
+            <div class="header-img">
+                <a href="./index.html" title="lien vers page home"><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></a>
+            </div>
+            <nav class="nav width50">
+                <ul class="flex align-center space-between responsive">
+                    <li><a href="./index.html" title="lien vers page home">Accueil</a></li>
+                    <li><a href="./categorie-basket.html" title="lien vers page chaussures">Chaussures</a></li>
+                    <li><a href="#" title="lien vers page vetements">Vêtements</a></li>
+                    <li><a href="#" title="lien vers page accessoires">Accessoires</a></li>
+                    <li><a href="#" title="lien vers" class="button-empty">@utdoor</a></li>
+                </ul>
+            </nav>
+            <nav class="flex align-center space-between">
+                <a href="#" title="lien vers le panier"><img src="./assets/imagesSIte/header-pannier.png" alt="logo du panier" class="responsive"></a>
+                <a href="#" title="lien vers le compte"><img src="./assets/imagesSIte/header-account.png" alt="logo de profil" class="responsive"></a>
+            </nav>
+            <div class="icon-burger d-none"></div>
+        </header>
+        <!-- Main -->
+        <main class="container-1200 container-750 container-360">
+            <div class="top-page-categorie flex space-between align-center">
+                <div class="flex top-categorie">
+                    <span><a href="#" title="lien page chaussures">Chaussures ></a></span>
+                    <span><a href="./categorie-basket.html" title="lien page categorie baskets">Baskets ></a></span>
+                </div>
+                <form id="search-bar" action="" method="POST" class="responsive-tel">
+                    <div>
+                        <input type="search" name="search" id="search" class="search-bar responsive-tel" placeholder="Rechercher un article ?" autocomplete="off">
+                    </div>
+                </form>
+                <div class="tri-box">
+                    <select name="tri" id="tri">
+                        <option value="">Tri par pertinence</option>
+                        <option value="croissant">Prix croissant</option>
+                        <option value="decroissant">Prix décroissant</option>
+                    </select>
+                </div>
+            </div>
+            <div class="liste-article flex align-center space-between">
+                <!-- <article>
+                    <div><a href="#" title="lien pour voir details article"><img src="./assets/imagesProduits/basket1.jpg" alt="image d'une chaussures" class="responsive"></a></div>
+                    <div class="flex space-between align-center">
+                        <h4>Nom du modèle</h4>
+                        <p>40€</p>
+                    </div>
+                    <p>Tee shirt techniques rando+ , résistant , confortable, tissus déperlant</p>
+                </article> -->
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top flex align-center">
+                <div><img src="./assets/imagesSIte/logo-blanc.png" alt="logo de la marque du site" class="responsive"></div>
+                <h4>Retrouvez nos boutiques près de chez vous</h4>
+                <div id="map"></div>
+            </div>
+            <div class="flex container-1200 container-750 container-360">
+                <div class="responsive-tel">
+                    <h4>Plan du site</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#" title="lien vers page homa">Accueil</a></li>
+                            <li><a href="#" title="lien vers page vêtements">Vêtements</a></li>
+                            <li><a href="#" title="lien vers page chaussure">Chaussures</a></li>
+                            <li><a href="#" title="lien vers page @utdoor">@utdoor</a></li>
+                            <li><a href="#" title="lien vers page contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-middle responsive-tel">
+                    <h4>Horaires d'ouverture de nos boutiques</h4>
+                    <p>Du lundi au vendredi de 10h à 12h30 puis de 13h30 à 19h <br>Le samedi de 9h à 18h30 non stop</p>
+                </div>
+                <div class="footer-right responsive-tel">
+                    <h4>Retrouvez nous sur les réseaux sociaux</h4>
+                    <nav>
+                        <ul class="flex space-between align-center">
+                            <li><a href="#" title="lien vers X"><img src="./assets/imagesSIte/TwitterX.png" alt="logo X" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers facebook"><img src="./assets/imagesSIte/Facebook.png" alt="logo facebook" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers tik-tok"><img src="./assets/imagesSIte/TikTok.png" alt="logo tik-tok" class="responsive"></a></li>
+                            <li><a href="#" title="lien vers instagram"><img src="./assets/imagesSIte/Instagram.png" alt="logo instagram" class="responsive"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="./js/liste-article.js" defer></script>
+        <script src="./js/app.js" defer></script>
+    </body>
+</html>
