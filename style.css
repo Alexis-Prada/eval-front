@@ -49,7 +49,7 @@ a{
 a:visited{
     color: var(--dark);
 }
-header a:visited, footer a:visited, .hero a:visited, header a{
+header a:visited, footer a:visited, .hero a:visited, header a, header li{
     color: var(--white);
 }
 ul{
